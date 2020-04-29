@@ -125,15 +125,22 @@ nav {
 .service-item-img {
   width: 90px;
   height: 90px;
-  border: 2px solid #dedede;
-  border-radius: 45px; }
+  border-radius: 45px;
+  border: 2px solid #dedede; }
 
-.service-item img {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  top: 20px;
-  left: 20px; }
+.service-item a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #c0301c;
+  font-size: 50px;
+  margin-top: 15px; }
+
+.service-item-img:hover {
+  background-color: #c0301c; }
+
+.service-item a:hover {
+  color: #f8f8f8; }
 
 .service-item-title {
   text-transform: uppercase;
@@ -151,13 +158,19 @@ nav {
   background-color: #f8f8f8; }
 
 .about-text {
-  display: flex;
+  display: flex; }
+
+.about-text-left, .about-text-right {
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
-  padding-right: 10px;
-  padding-left: 10px;
   line-height: 1.5rem;
   color: #555555; }
+
+.about-text-left {
+  margin-right: 10px; }
+
+.about-text-right {
+  margin-left: 10px; }
 
 .about-team {
   display: flex;
@@ -206,26 +219,27 @@ nav {
 
 .wrapper-example {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .example-img img {
   width: 350px;
   height: 320px;
   object-fit: none;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px; }
 
 .parallax {
   margin-top: 70px;
-  height: 370px;
+  height: 500px;
   background-image: url(/img/parallax.jpg);
   background-position: center;
   background-repeat: no-repeat; }
 
 .parallax-wrapper {
   background-color: rgba(255, 20, 20, 0.6);
-  height: 370px; }
+  height: 500px; }
 
 .parallax-title {
   font-family: 'Roboto Slab', serif;
@@ -331,3 +345,56 @@ nav {
   font-size: 20px;
   color: #555555;
   text-align: center; }
+
+/*Footer */
+.footer {
+  background-color: #c0301c;
+  height: 300px; }
+
+footer {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.footer-social-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.footer-social-list__item a {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  border: 2px solid #fff;
+  display: block;
+  padding: 20px;
+  border-radius: 50px;
+  margin-left: 8px;
+  margin-right: 8px; }
+
+.footer-social-list__item a:hover {
+  color: #c0301c;
+  background-color: #fff; }
+
+.footer-text {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.footer-text::before {
+  content: " ";
+  display: block;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50px;
+  border-bottom: 2px solid #fff; }
+
+/*Footer end*/
