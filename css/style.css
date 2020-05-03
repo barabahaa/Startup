@@ -34,7 +34,7 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  min-width: 500px; }
+  min-width: 450px; }
 
 .navbar-list__item a {
   display: block;
@@ -109,7 +109,11 @@ nav {
   font-size: 1em;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  padding: 0; }
+
+.all-subtitle ul {
+  padding: 0; }
 
 .services {
   background-color: #fff;
@@ -405,3 +409,64 @@ footer {
   border-bottom: 2px solid #fff; }
 
 /*Footer end*/
+@media (max-width: 576px) {
+  .all-titles {
+    padding-top: 40px; }
+  .all-subtitle {
+    margin-bottom: 30px; }
+  .all-subtitle ul {
+    padding: 0; }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; }
+  .navbar-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0; }
+  .intro-title {
+    font-size: 2em; }
+  .intro-subtitle {
+    font-size: 1em;
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  .service-list {
+    flex-direction: column; }
+  .about-text {
+    flex-direction: column; }
+  .about-text-left, .about-text-right {
+    margin-right: 0px;
+    text-align: center; }
+  .about-team {
+    flex-direction: column;
+    align-items: center; }
+  .about-team-item img {
+    max-width: 350px;
+    max-height: 350px;
+    padding-top: 20px; }
+  .about-team-item__role {
+    padding-bottom: 20px; }
+  .recent-post {
+    flex-direction: column;
+    align-items: center; }
+  .recent-post-img img {
+    width: 360px;
+    height: 220px;
+    object-fit: none;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .clients-logo-list {
+    padding: 0;
+    padding-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center; }
+  .clients-logo-list ul {
+    padding: 0; } }
