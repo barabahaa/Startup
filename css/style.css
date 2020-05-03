@@ -130,8 +130,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-right: 2.5%;
-  padding-left: 2.5%; }
+  padding-left: 5px;
+  padding-right: 5px; }
 
 .service-item-img {
   width: 90px;
@@ -185,7 +185,7 @@ nav {
 
 .about-team {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 .about-team-item img {
@@ -193,7 +193,7 @@ nav {
   height: 250px;
   object-fit: none;
   object-position: top;
-  padding-top: 70px; }
+  padding-top: 50px; }
 
 .about-team-item__name {
   text-transform: uppercase;
@@ -208,7 +208,7 @@ nav {
   color: #555555;
   font-size: 13px;
   font-family: 'Roboto Slab', serif;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
 
 .wrapper-latest {
   display: flex;
@@ -409,25 +409,106 @@ footer {
   border-bottom: 2px solid #fff; }
 
 /*Footer end*/
+@media (max-width: 992px) {
+  .example-img img {
+    width: 250px;
+    height: 220px; }
+  .recent-post {
+    flex-direction: column;
+    align-items: center; }
+  .recent-post-img img {
+    object-fit: none;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .recent-post-button a {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .clients {
+    height: 380px;
+    background-color: #dedede; }
+  .clients-logo-list {
+    padding-top: 20px;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; }
+  .client-logo__item {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .client-content-text p {
+    margin-top: 30px;
+    margin-bottom: 30px; } }
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px; }
+  .logo a {
+    margin-bottom: 20px; }
+  .navbar-list {
+    justify-content: space-around; }
+  .intro-title {
+    font-size: 2.5em; }
+  .intro-subtitle {
+    font-size: 1.25em;
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  .about-team-item img {
+    max-width: 250px;
+    max-height: 250px;
+    padding-top: 20px; }
+  .about-team-item__role {
+    padding-bottom: 20px; }
+  .example-img img {
+    width: 250px;
+    height: 220px; }
+  .recent-post {
+    flex-direction: column;
+    align-items: center; }
+  .recent-post-img img {
+    object-fit: none;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .recent-post-button a {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .clients {
+    height: 380px;
+    background-color: #dedede; }
+  .clients-logo-list {
+    padding-top: 20px;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; }
+  .client-logo__item {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .client-content-text p {
+    margin-top: 30px;
+    margin-bottom: 30px; } }
+
 @media (max-width: 576px) {
   .all-titles {
     padding-top: 40px; }
   .all-subtitle {
     margin-bottom: 30px; }
-  .all-subtitle ul {
-    padding: 0; }
+  .container {
+    width: 100%; }
   nav {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 20px; }
+  .logo a {
+    margin-bottom: 20px; }
   .navbar-list {
-    display: flex;
     width: 100%;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0; }
+    justify-content: space-around; }
   .intro-title {
     font-size: 2em; }
   .intro-subtitle {
@@ -436,6 +517,8 @@ footer {
     padding-bottom: 50px; }
   .service-list {
     flex-direction: column; }
+  .service-item-text {
+    margin-bottom: 40px; }
   .about-text {
     flex-direction: column; }
   .about-text-left, .about-text-right {
@@ -460,6 +543,9 @@ footer {
     margin: 0px;
     padding-top: 20px;
     padding-bottom: 20px; }
+  .recent-post-button a {
+    margin-top: 20px;
+    margin-bottom: 40px; }
   .clients-logo-list {
     padding: 0;
     padding-top: 20px;
@@ -468,5 +554,9 @@ footer {
     flex-direction: column;
     justify-content: stretch;
     align-items: center; }
-  .clients-logo-list ul {
-    padding: 0; } }
+  .client-logo__item {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .client-content-text p {
+    margin-top: 30px;
+    margin-bottom: 30px; } }
