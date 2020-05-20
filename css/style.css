@@ -4,11 +4,12 @@
   margin-left: 5%;
   margin-right: 5%; }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  border: 0;
-  box-sizing: border-box; }
+  border: 0; }
 
 header {
   background-image: url(/img/fon.jpg);
@@ -199,7 +200,9 @@ nav {
 .about-team-item__img img {
   width: 250px;
   height: 250px;
+  -o-object-fit: none;
   object-fit: none;
+  -o-object-position: top;
   object-position: top;
   padding-top: 50px; }
 
@@ -280,6 +283,7 @@ nav {
 .example-img img {
   width: 350px;
   height: 320px;
+  -o-object-fit: none;
   object-fit: none;
   margin-right: auto;
   margin-left: auto;
@@ -371,19 +375,13 @@ nav {
 .recent-post-img img {
   width: 460px;
   height: 320px;
+  -o-object-fit: none;
   object-fit: none;
   margin-right: 40px;
   margin-bottom: 75px; }
 
 .wrapper-recent-post {
   position: relative; }
-
-.recent-post:first-child::after {
-  content: "";
-  position: absolute;
-  top: 360px;
-  width: 100%;
-  border-bottom: 1px solid rgba(29, 28, 28, 0.4); }
 
 .recent-post-date {
   font-weight: bold;
@@ -533,6 +531,7 @@ footer {
     flex-direction: column;
     align-items: center; }
   .recent-post-img img {
+    -o-object-fit: none;
     object-fit: none;
     margin: 0px;
     padding-top: 20px;
@@ -557,6 +556,57 @@ footer {
   .client-content-text p {
     margin-top: 30px;
     margin-bottom: 30px; } }
+
+/* Стили слайдера */
+.slick-list {
+  overflow: hidden; }
+
+.slick-track {
+  display: flex; }
+
+.slick-slide {
+  margin-left: auto; }
+
+.slider {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  padding: 0px 60px; }
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -25px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0px;
+  width: 50px;
+  height: 50px; }
+
+.slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.slider .slick-dots li {
+  list-style: none; }
+
+.slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 0px;
+  cursor: pointer; }
+
+.slider .slick-dots .slick-active button {
+  background-color: #7a7a7a;
+  border: 1px solid #fff; }
+
+.slider__item {
+  text-align: center;
+  width: 100%; }
 
 @media (max-width: 768px) {
   nav {
@@ -585,12 +635,11 @@ footer {
   .example-img img {
     width: 250px;
     height: 220px; }
-  .recent-post:first-child::after {
-    top: 580px; }
   .recent-post {
     flex-direction: column;
     align-items: center; }
   .recent-post-img img {
+    -o-object-fit: none;
     object-fit: none;
     margin: 0px;
     padding-top: 20px;
@@ -656,14 +705,13 @@ footer {
     padding-top: 20px; }
   .about-team-item__role {
     padding-bottom: 20px; }
-  .recent-post:first-child::after {
-    top: 560px; }
   .recent-post {
     flex-direction: column;
     align-items: center; }
   .recent-post-img img {
     width: 360px;
     height: 220px;
+    -o-object-fit: none;
     object-fit: none;
     margin: 0px;
     padding-top: 20px;
@@ -685,54 +733,3 @@ footer {
   .client-content-text p {
     margin-top: 30px;
     margin-bottom: 30px; } }
-
-/* Стили слайдера */
-.slick-list {
-  overflow: hidden; }
-
-.slick-track {
-  display: flex; }
-
-.slick-slide {
-  margin-left: auto; }
-
-.slider {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  position: relative;
-  padding: 0px 60px; }
-
-.slider .slick-arrow {
-  position: absolute;
-  top: 50%;
-  margin: -25px 0px 0px 0px;
-  z-index: 10;
-  font-size: 0px;
-  width: 50px;
-  height: 50px; }
-
-.slider .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.slider .slick-dots li {
-  list-style: none; }
-
-.slider .slick-dots li button {
-  width: 10px;
-  height: 10px;
-  margin: 5px;
-  background-color: #fff;
-  border-radius: 50%;
-  font-size: 0px;
-  cursor: pointer; }
-
-.slider .slick-dots .slick-active button {
-  background-color: #7a7a7a;
-  border: 1px solid #fff; }
-
-.slider__item {
-  text-align: center;
-  width: 100%; }
