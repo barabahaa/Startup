@@ -327,7 +327,7 @@ nav {
 .parallax {
   margin-top: 70px;
   height: 500px;
-  background-image: url(/img/parallax.jpg);
+  background-image: url(../img/parallax.jpg);
   background-position: center;
   background-repeat: no-repeat; }
 
