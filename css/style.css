@@ -24,7 +24,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 40px; }
 
 .logo a {
@@ -651,6 +651,8 @@ footer {
     padding-top: 40px; }
   .all-subtitle {
     margin-bottom: 30px; }
+  .category-list {
+    flex-direction: column; }
   .container {
     width: 100%; }
   nav {
@@ -662,7 +664,8 @@ footer {
     margin-bottom: 20px; }
   .navbar-list {
     width: 100%;
-    justify-content: space-around; }
+    flex-direction: column;
+    align-items: center; }
   .intro-title {
     font-size: 2em; }
   .intro-subtitle {
